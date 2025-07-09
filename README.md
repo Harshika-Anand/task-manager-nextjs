@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Manager - Next.js Full-Stack App
 
-## Getting Started
+A modern, full-stack task management application built with Next.js 14, TypeScript, MongoDB, and Zod validation.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✅ **Authentication System**
+- User registration with email verification
+- Secure login with JWT tokens
+- Password hashing with bcrypt
+- HTTP-only cookies for security
+- Protected routes and API endpoints
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✅ **Task Management**
+- Create, read, update, and delete tasks
+- Task priorities (Low, Medium, High, Urgent)
+- Categories (Work, Personal, Health, Finance, Learning, Other)
+- Due dates with overdue indicators
+- Task status tracking (Pending → In Progress → Completed)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ✅ **Advanced Features**
+- Real-time filtering by status, priority, and category
+- Dashboard with statistics and recent tasks
+- Responsive design for all devices
+- Loading states and error handling
+- Form validation with Zod
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✅ **Technical Stack**
+- **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, MongoDB with Mongoose
+- **Authentication**: JWT tokens, bcrypt password hashing
+- **Validation**: Zod schemas for runtime type safety
+- **Database**: MongoDB Atlas (cloud database)
 
-## Learn More
+## 🛠️ Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/task-manager-nextjs.git
+   cd task-manager-nextjs
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Set up environment variables**
+   
+   Create a `.env.local` file in the root directory:
+   ```env
+   # MongoDB Connection
+   MONGODB_URI=your_mongodb_connection_string
+   
+   # NextAuth Configuration
+   NEXTAUTH_SECRET=your_super_secret_key_here
+   
+   # App Configuration
+   NODE_ENV=development
+   ```
 
-## Deploy on Vercel
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Open your browser**
+   Navigate to `http://localhost:3000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
