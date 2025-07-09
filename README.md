@@ -2,7 +2,7 @@
 
 A modern, full-stack task management application built with Next.js 14, TypeScript, MongoDB, and Zod validation.
 
-## 🚀 Features
+## Features
 
 ### ✅ **Authentication System**
 - User registration with email verification
